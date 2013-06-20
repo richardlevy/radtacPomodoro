@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7D2ED191773260700BE28BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED181773260700BE28BD /* UIKit.framework */; };
+		E7D2ED1B1773260700BE28BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED1A1773260700BE28BD /* Foundation.framework */; };
+		E7D2ED1D1773260700BE28BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED1C1773260700BE28BD /* CoreGraphics.framework */; };
+		E7D2ED231773260700BE28BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED211773260700BE28BD /* InfoPlist.strings */; };
+		E7D2ED251773260700BE28BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED241773260700BE28BD /* main.m */; };
+		E7D2ED291773260700BE28BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED281773260700BE28BD /* AppDelegate.m */; };
+		E7D2ED2B1773260700BE28BD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED2A1773260700BE28BD /* Default.png */; };
+		E7D2ED2D1773260700BE28BD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED2C1773260700BE28BD /* Default@2x.png */; };
+		E7D2ED2F1773260700BE28BD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED2E1773260700BE28BD /* Default-568h@2x.png */; };
+		E7D2ED321773260700BE28BD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED301773260700BE28BD /* MainStoryboard.storyboard */; };
+		E7D2ED351773260700BE28BD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED341773260700BE28BD /* FirstViewController.m */; };
+		E7D2ED371773260700BE28BD /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED361773260700BE28BD /* first.png */; };
+		E7D2ED391773260700BE28BD /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED381773260700BE28BD /* first@2x.png */; };
+		E7D2ED3C1773260700BE28BD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED3B1773260700BE28BD /* SecondViewController.m */; };
+		E7D2ED3E1773260700BE28BD /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED3D1773260700BE28BD /* second.png */; };
+		E7D2ED401773260700BE28BD /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED3F1773260700BE28BD /* second@2x.png */; };
+		E7D2ED481773260700BE28BD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED471773260700BE28BD /* SenTestingKit.framework */; };
+		E7D2ED491773260700BE28BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED181773260700BE28BD /* UIKit.framework */; };
+		E7D2ED4A1773260700BE28BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED1A1773260700BE28BD /* Foundation.framework */; };
+		E7D2ED521773260700BE28BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED501773260700BE28BD /* InfoPlist.strings */; };
+		E7D2ED551773260700BE28BD /* RadtacPomodoroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED541773260700BE28BD /* RadtacPomodoroTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7D2ED4B1773260700BE28BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7D2ED0D1773260600BE28BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7D2ED141773260700BE28BD;
+			remoteInfo = RadtacPomodoro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E7D2ED151773260700BE28BD /* RadtacPomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadtacPomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D2ED181773260700BE28BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7D2ED1A1773260700BE28BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7D2ED1C1773260700BE28BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7D2ED201773260700BE28BD /* RadtacPomodoro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadtacPomodoro-Info.plist"; sourceTree = "<group>"; };
+		E7D2ED221773260700BE28BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7D2ED241773260700BE28BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7D2ED261773260700BE28BD /* RadtacPomodoro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RadtacPomodoro-Prefix.pch"; sourceTree = "<group>"; };
+		E7D2ED271773260700BE28BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7D2ED281773260700BE28BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E7D2ED2A1773260700BE28BD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E7D2ED2C1773260700BE28BD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E7D2ED2E1773260700BE28BD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E7D2ED311773260700BE28BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E7D2ED331773260700BE28BD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		E7D2ED341773260700BE28BD /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		E7D2ED361773260700BE28BD /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		E7D2ED381773260700BE28BD /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		E7D2ED3A1773260700BE28BD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		E7D2ED3B1773260700BE28BD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E7D2ED3D1773260700BE28BD /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		E7D2ED3F1773260700BE28BD /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		E7D2ED461773260700BE28BD /* RadtacPomodoroTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadtacPomodoroTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D2ED471773260700BE28BD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E7D2ED4F1773260700BE28BD /* RadtacPomodoroTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadtacPomodoroTests-Info.plist"; sourceTree = "<group>"; };
+		E7D2ED511773260700BE28BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7D2ED531773260700BE28BD /* RadtacPomodoroTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadtacPomodoroTests.h; sourceTree = "<group>"; };
+		E7D2ED541773260700BE28BD /* RadtacPomodoroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadtacPomodoroTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7D2ED121773260700BE28BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D2ED191773260700BE28BD /* UIKit.framework in Frameworks */,
+				E7D2ED1B1773260700BE28BD /* Foundation.framework in Frameworks */,
+				E7D2ED1D1773260700BE28BD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7D2ED421773260700BE28BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D2ED481773260700BE28BD /* SenTestingKit.framework in Frameworks */,
+				E7D2ED491773260700BE28BD /* UIKit.framework in Frameworks */,
+				E7D2ED4A1773260700BE28BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7D2ED0C1773260600BE28BD = {
+			isa = PBXGroup;
+			children = (
+				E7D2ED1E1773260700BE28BD /* RadtacPomodoro */,
+				E7D2ED4D1773260700BE28BD /* RadtacPomodoroTests */,
+				E7D2ED171773260700BE28BD /* Frameworks */,
+				E7D2ED161773260700BE28BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7D2ED161773260700BE28BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7D2ED151773260700BE28BD /* RadtacPomodoro.app */,
+				E7D2ED461773260700BE28BD /* RadtacPomodoroTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7D2ED171773260700BE28BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7D2ED181773260700BE28BD /* UIKit.framework */,
+				E7D2ED1A1773260700BE28BD /* Foundation.framework */,
+				E7D2ED1C1773260700BE28BD /* CoreGraphics.framework */,
+				E7D2ED471773260700BE28BD /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7D2ED1E1773260700BE28BD /* RadtacPomodoro */ = {
+			isa = PBXGroup;
+			children = (
+				E7D2ED271773260700BE28BD /* AppDelegate.h */,
+				E7D2ED281773260700BE28BD /* AppDelegate.m */,
+				E7D2ED301773260700BE28BD /* MainStoryboard.storyboard */,
+				E7D2ED331773260700BE28BD /* FirstViewController.h */,
+				E7D2ED341773260700BE28BD /* FirstViewController.m */,
+				E7D2ED361773260700BE28BD /* first.png */,
+				E7D2ED381773260700BE28BD /* first@2x.png */,
+				E7D2ED3A1773260700BE28BD /* SecondViewController.h */,
+				E7D2ED3B1773260700BE28BD /* SecondViewController.m */,
+				E7D2ED3D1773260700BE28BD /* second.png */,
+				E7D2ED3F1773260700BE28BD /* second@2x.png */,
+				E7D2ED1F1773260700BE28BD /* Supporting Files */,
+			);
+			path = RadtacPomodoro;
+			sourceTree = "<group>";
+		};
+		E7D2ED1F1773260700BE28BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7D2ED201773260700BE28BD /* RadtacPomodoro-Info.plist */,
+				E7D2ED211773260700BE28BD /* InfoPlist.strings */,
+				E7D2ED241773260700BE28BD /* main.m */,
+				E7D2ED261773260700BE28BD /* RadtacPomodoro-Prefix.pch */,
+				E7D2ED2A1773260700BE28BD /* Default.png */,
+				E7D2ED2C1773260700BE28BD /* Default@2x.png */,
+				E7D2ED2E1773260700BE28BD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7D2ED4D1773260700BE28BD /* RadtacPomodoroTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7D2ED531773260700BE28BD /* RadtacPomodoroTests.h */,
+				E7D2ED541773260700BE28BD /* RadtacPomodoroTests.m */,
+				E7D2ED4E1773260700BE28BD /* Supporting Files */,
+			);
+			path = RadtacPomodoroTests;
+			sourceTree = "<group>";
+		};
+		E7D2ED4E1773260700BE28BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7D2ED4F1773260700BE28BD /* RadtacPomodoroTests-Info.plist */,
+				E7D2ED501773260700BE28BD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7D2ED141773260700BE28BD /* RadtacPomodoro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7D2ED581773260700BE28BD /* Build configuration list for PBXNativeTarget "RadtacPomodoro" */;
+			buildPhases = (
+				E7D2ED111773260700BE28BD /* Sources */,
+				E7D2ED121773260700BE28BD /* Frameworks */,
+				E7D2ED131773260700BE28BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadtacPomodoro;
+			productName = RadtacPomodoro;
+			productReference = E7D2ED151773260700BE28BD /* RadtacPomodoro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7D2ED451773260700BE28BD /* RadtacPomodoroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7D2ED5B1773260700BE28BD /* Build configuration list for PBXNativeTarget "RadtacPomodoroTests" */;
+			buildPhases = (
+				E7D2ED411773260700BE28BD /* Sources */,
+				E7D2ED421773260700BE28BD /* Frameworks */,
+				E7D2ED431773260700BE28BD /* Resources */,
+				E7D2ED441773260700BE28BD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7D2ED4C1773260700BE28BD /* PBXTargetDependency */,
+			);
+			name = RadtacPomodoroTests;
+			productName = RadtacPomodoroTests;
+			productReference = E7D2ED461773260700BE28BD /* RadtacPomodoroTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7D2ED0D1773260600BE28BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = RML;
+			};
+			buildConfigurationList = E7D2ED101773260600BE28BD /* Build configuration list for PBXProject "RadtacPomodoro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E7D2ED0C1773260600BE28BD;
+			productRefGroup = E7D2ED161773260700BE28BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7D2ED141773260700BE28BD /* RadtacPomodoro */,
+				E7D2ED451773260700BE28BD /* RadtacPomodoroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7D2ED131773260700BE28BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D2ED231773260700BE28BD /* InfoPlist.strings in Resources */,
+				E7D2ED2B1773260700BE28BD /* Default.png in Resources */,
+				E7D2ED2D1773260700BE28BD /* Default@2x.png in Resources */,
+				E7D2ED2F1773260700BE28BD /* Default-568h@2x.png in Resources */,
+				E7D2ED321773260700BE28BD /* MainStoryboard.storyboard in Resources */,
+				E7D2ED371773260700BE28BD /* first.png in Resources */,
+				E7D2ED391773260700BE28BD /* first@2x.png in Resources */,
+				E7D2ED3E1773260700BE28BD /* second.png in Resources */,
+				E7D2ED401773260700BE28BD /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7D2ED431773260700BE28BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D2ED521773260700BE28BD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E7D2ED441773260700BE28BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7D2ED111773260700BE28BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D2ED251773260700BE28BD /* main.m in Sources */,
+				E7D2ED291773260700BE28BD /* AppDelegate.m in Sources */,
+				E7D2ED351773260700BE28BD /* FirstViewController.m in Sources */,
+				E7D2ED3C1773260700BE28BD /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7D2ED411773260700BE28BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D2ED551773260700BE28BD /* RadtacPomodoroTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7D2ED4C1773260700BE28BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7D2ED141773260700BE28BD /* RadtacPomodoro */;
+			targetProxy = E7D2ED4B1773260700BE28BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7D2ED211773260700BE28BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7D2ED221773260700BE28BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E7D2ED301773260700BE28BD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7D2ED311773260700BE28BD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		E7D2ED501773260700BE28BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7D2ED511773260700BE28BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7D2ED561773260700BE28BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E7D2ED571773260700BE28BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7D2ED591773260700BE28BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadtacPomodoro/RadtacPomodoro-Prefix.pch";
+				INFOPLIST_FILE = "RadtacPomodoro/RadtacPomodoro-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E7D2ED5A1773260700BE28BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadtacPomodoro/RadtacPomodoro-Prefix.pch";
+				INFOPLIST_FILE = "RadtacPomodoro/RadtacPomodoro-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E7D2ED5C1773260700BE28BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RadtacPomodoro.app/RadtacPomodoro";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadtacPomodoro/RadtacPomodoro-Prefix.pch";
+				INFOPLIST_FILE = "RadtacPomodoroTests/RadtacPomodoroTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E7D2ED5D1773260700BE28BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RadtacPomodoro.app/RadtacPomodoro";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadtacPomodoro/RadtacPomodoro-Prefix.pch";
+				INFOPLIST_FILE = "RadtacPomodoroTests/RadtacPomodoroTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7D2ED101773260600BE28BD /* Build configuration list for PBXProject "RadtacPomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7D2ED561773260700BE28BD /* Debug */,
+				E7D2ED571773260700BE28BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7D2ED581773260700BE28BD /* Build configuration list for PBXNativeTarget "RadtacPomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7D2ED591773260700BE28BD /* Debug */,
+				E7D2ED5A1773260700BE28BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E7D2ED5B1773260700BE28BD /* Build configuration list for PBXNativeTarget "RadtacPomodoroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7D2ED5C1773260700BE28BD /* Debug */,
+				E7D2ED5D1773260700BE28BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7D2ED0D1773260600BE28BD /* Project object */;
+}
