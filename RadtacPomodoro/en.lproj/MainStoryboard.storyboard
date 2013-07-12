@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2837" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1921"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier First View Controller - First-->
+        <!--First View Controller - First-->
         <scene sceneID="11">
             <objects>
                 <viewController title="First" id="2" customClass="FirstViewController" sceneMemberID="viewController">
@@ -12,38 +14,29 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="20">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="21">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="Ikv-jk-tyi"/>
-                                </constraints>
-                                <string key="text">Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate.</string>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VlV-ui-INi">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="21" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QBg-X6-fBV"/>
-                            <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Qxj-1L-2Yh"/>
-                            <constraint firstItem="20" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ty9-wx-CyI"/>
-                            <constraint firstItem="21" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Zmm-k2-2L7"/>
-                            <constraint firstItem="21" firstAttribute="top" secondItem="20" secondAttribute="bottom" constant="40" type="user" id="jX0-Wi-kmb"/>
-                            <constraint firstAttribute="centerY" secondItem="21" secondAttribute="centerY" type="user" id="yWk-L2-m9F"/>
+                            <constraint firstItem="VlV-ui-INi" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="197-UP-6mQ"/>
+                            <constraint firstItem="VlV-ui-INi" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="5SC-tE-ca6"/>
+                            <constraint firstItem="VlV-ui-INi" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="EjA-a3-fvG"/>
+                            <constraint firstItem="VlV-ui-INi" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="IgD-i1-eDk"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homeTabIcon.png" id="7"/>
+                    <connections>
+                        <outlet property="webView" destination="VlV-ui-INi" id="P6f-Pg-fOA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="-138"/>
+            <point key="canvasLocation" x="653" y="-152"/>
         </scene>
-        <!--class Prefix:identifier Second View Controller - Second-->
+        <!--Second View Controller - Second-->
         <scene sceneID="13">
             <objects>
                 <viewController title="Second" id="3" customClass="SecondViewController" sceneMemberID="viewController">
@@ -51,32 +44,153 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="22">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAS-rd-rYS">
+                                <color key="backgroundColor" red="0.015686275437474251" green="0.67450982332229614" blue="0.7450980544090271" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="dPQ-ns-wwV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="18"/>
+                                <state key="normal" title="BEGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStopTapped:" destination="3" eventType="touchUpInside" id="8u1-K9-Q1i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mb-Cd-xrC" userLabel="TimerIconButton">
+                                <color key="backgroundColor" red="0.85490202900000001" green="0.85490202900000001" blue="0.85098046059999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="n6Y-gE-GCh"/>
+                                    <constraint firstAttribute="height" constant="44" id="wUp-bl-4SE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="stopwatchTabIcon.png" backgroundImage="beginButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStopTapped:" destination="3" eventType="touchUpInside" id="NO8-LF-VIR"/>
+                                </connections>
+                            </button>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F84-6N-fpJ" userLabel="ClockView" customClass="XYPieChart">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Thc-qx-RSd" userLabel="RoundView">
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwj-hJ-wsM" userLabel="timeSeparatorLabel">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="xoA-3T-lRt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="42"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iac-RE-dEq" userLabel="minutesLabel">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="DqT-BO-jcA"/>
+                                                    <constraint firstAttribute="width" constant="60" id="bBw-IS-O1b"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="42"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCt-zM-3Ya" userLabel="secondsLabel">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="vf6-hi-N3n"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="42"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pomodoro finished" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzt-cF-yt7" userLabel="TimeTypeLabel">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="134" type="user" id="XEH-ZB-4mF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Hzt-cF-yt7" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="0c7-j0-ii9"/>
+                                            <constraint firstItem="Cwj-hJ-wsM" firstAttribute="top" secondItem="Thc-qx-RSd" secondAttribute="top" constant="70" id="51k-3f-RyT"/>
+                                            <constraint firstItem="iac-RE-dEq" firstAttribute="top" secondItem="Thc-qx-RSd" secondAttribute="top" constant="72" id="7wk-Ou-a5H"/>
+                                            <constraint firstItem="yCt-zM-3Ya" firstAttribute="baseline" secondItem="iac-RE-dEq" secondAttribute="baseline" type="default" id="AYM-Fx-Get"/>
+                                            <constraint firstAttribute="width" constant="180" type="user" id="H0l-3Y-ZTn"/>
+                                            <constraint firstItem="iac-RE-dEq" firstAttribute="leading" secondItem="Thc-qx-RSd" secondAttribute="leading" constant="28" id="NYb-iO-pZI"/>
+                                            <constraint firstItem="Hzt-cF-yt7" firstAttribute="centerX" secondItem="Cwj-hJ-wsM" secondAttribute="centerX" type="default" id="OPb-tS-0t8"/>
+                                            <constraint firstItem="Hzt-cF-yt7" firstAttribute="leading" secondItem="Thc-qx-RSd" secondAttribute="leading" constant="26" type="user" id="Xkf-lF-8Fl"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hzt-cF-yt7" secondAttribute="bottom" constant="36" id="eK2-1s-ehg"/>
+                                            <constraint firstItem="yCt-zM-3Ya" firstAttribute="top" secondItem="iac-RE-dEq" secondAttribute="top" type="default" id="va3-Am-o4Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="yCt-zM-3Ya" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="wjG-n4-RLr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstItem="Thc-qx-RSd" firstAttribute="top" secondItem="F84-6N-fpJ" secondAttribute="top" constant="55" id="BSU-X6-HaN"/>
+                                    <constraint firstItem="Thc-qx-RSd" firstAttribute="centerY" secondItem="F84-6N-fpJ" secondAttribute="centerY" type="default" id="Fg4-r6-Lpn"/>
+                                    <constraint firstAttribute="height" constant="290" type="user" id="VdJ-wq-wAx"/>
+                                    <constraint firstItem="Thc-qx-RSd" firstAttribute="centerX" secondItem="F84-6N-fpJ" secondAttribute="centerX" type="default" id="eU5-Lv-h4e"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5q-sm-23p" userLabel="KeyTextLabel">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="oQ1-y5-aql"/>
+                                    <constraint firstAttribute="height" constant="30" id="yU7-1M-A3c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rules appear here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhn-R8-r7l" userLabel="RulesTextLabel">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="cQR-IW-sY8"/>
+                                    <constraint firstAttribute="height" constant="30" id="BHs-DC-gCK"/>
                                 </constraints>
-                                <string key="text">Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate.</string>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="22" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="0q6-IA-e8m"/>
-                            <constraint firstAttribute="trailing" secondItem="23" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fR4-wH-Ih7"/>
-                            <constraint firstItem="23" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fzb-YA-SeR"/>
-                            <constraint firstAttribute="centerY" secondItem="23" secondAttribute="centerY" type="user" id="llH-eD-iPS"/>
-                            <constraint firstAttribute="trailing" secondItem="22" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="pc3-9Y-W42"/>
-                            <constraint firstItem="23" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="40" type="user" id="yUx-Ee-KEk"/>
+                            <constraint firstItem="k5q-sm-23p" firstAttribute="leading" secondItem="6mb-Cd-xrC" secondAttribute="leading" type="default" id="Cvj-2a-wk2"/>
+                            <constraint firstItem="F84-6N-fpJ" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DyS-sz-o8O"/>
+                            <constraint firstAttribute="bottom" secondItem="FAS-rd-rYS" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="FMm-e5-IfB"/>
+                            <constraint firstItem="FAS-rd-rYS" firstAttribute="trailing" secondItem="k5q-sm-23p" secondAttribute="trailing" type="default" id="LKf-iL-mwq"/>
+                            <constraint firstItem="F84-6N-fpJ" firstAttribute="centerX" secondItem="k5q-sm-23p" secondAttribute="centerX" type="default" id="NPp-lx-fqP"/>
+                            <constraint firstItem="FAS-rd-rYS" firstAttribute="top" secondItem="6mb-Cd-xrC" secondAttribute="top" type="default" id="Tq1-cb-Lek"/>
+                            <constraint firstItem="Jhn-R8-r7l" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="V84-Jt-WH6"/>
+                            <constraint firstAttribute="bottom" secondItem="6mb-Cd-xrC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Xer-Tc-62y"/>
+                            <constraint firstItem="F84-6N-fpJ" firstAttribute="top" secondItem="17" secondAttribute="top" constant="75" id="bAt-Om-mDy"/>
+                            <constraint firstItem="Jhn-R8-r7l" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="dvG-yw-Enu"/>
+                            <constraint firstAttribute="trailing" secondItem="F84-6N-fpJ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gTx-2K-kZO"/>
+                            <constraint firstAttribute="bottom" secondItem="k5q-sm-23p" secondAttribute="bottom" constant="85" id="u6Q-03-Jk3"/>
+                            <constraint firstItem="Jhn-R8-r7l" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="uiT-qa-umQ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Pomodoro" image="stopwatchTabIcon.png" id="6"/>
+                    <connections>
+                        <outlet property="keyLabel" destination="k5q-sm-23p" id="PsU-Fu-aV6"/>
+                        <outlet property="pieClock" destination="F84-6N-fpJ" id="2lA-8h-fuI"/>
+                        <outlet property="roundView" destination="Thc-qx-RSd" id="spg-Zd-4xn"/>
+                        <outlet property="rulesTextLabel" destination="Jhn-R8-r7l" id="ERM-08-bpZ"/>
+                        <outlet property="startStopButton" destination="FAS-rd-rYS" id="HMu-im-Exg"/>
+                        <outlet property="timeTypeLabel" destination="Hzt-cF-yt7" id="Ra3-IH-OC8"/>
+                        <outlet property="timerMinutesLabel" destination="iac-RE-dEq" id="mmy-6T-aam"/>
+                        <outlet property="timerSecondsLabel" destination="yCt-zM-3Ya" id="S8G-lY-CA0"/>
+                        <outlet property="timerSeparatorLabel" destination="Cwj-hJ-wsM" id="i6F-u8-X7c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,9 +217,39 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
+        <image name="beginButton.png" width="36" height="36"/>
+        <image name="homeTabIcon.png" width="22" height="22"/>
+        <image name="stopwatchTabIcon.png" width="22" height="26"/>
     </resources>
+    <classes>
+        <class className="FirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="startStopTapped:"/>
+                <relationship kind="outlet" name="keyLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pieClock" candidateClass="XYPieChart"/>
+                <relationship kind="outlet" name="roundView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="rulesTextLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="startStopButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="timeTypeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timerMinutesLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timerSecondsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timerSeparatorLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="XYPieChart" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/XYPieChart.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

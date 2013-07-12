@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E70C736D1785ECA700E1D368 /* alarm_clock_bell_ringing.caf in Resources */ = {isa = PBXBuildFile; fileRef = E70C736C1785ECA700E1D368 /* alarm_clock_bell_ringing.caf */; };
+		E70C736F1785ECAE00E1D368 /* bell_style_alarm_clock_wind_up.caf in Resources */ = {isa = PBXBuildFile; fileRef = E70C736E1785ECAE00E1D368 /* bell_style_alarm_clock_wind_up.caf */; };
+		E76CDC2F1782CA2F00424D19 /* beginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E76CDC2E1782CA2F00424D19 /* beginButton.png */; };
+		E76CDC311782CF7C00424D19 /* beginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E76CDC301782CF7C00424D19 /* beginButton@2x.png */; };
+		E76CDC341782D42900424D19 /* beginButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E76CDC321782D42900424D19 /* beginButtonPressed.png */; };
+		E76CDC351782D42900424D19 /* beginButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E76CDC331782D42900424D19 /* beginButtonPressed@2x.png */; };
+		E76CDC401783105C00424D19 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E76CDC3F1783105C00424D19 /* ClockView.m */; };
+		E76CDC441783227900424D19 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E76CDC431783227900424D19 /* XYPieChart.m */; };
+		E76CDC47178322CE00424D19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76CDC46178322CE00424D19 /* QuartzCore.framework */; };
+		E76CDC481783238A00424D19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76CDC46178322CE00424D19 /* QuartzCore.framework */; };
 		E7D2ED191773260700BE28BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED181773260700BE28BD /* UIKit.framework */; };
 		E7D2ED1B1773260700BE28BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED1A1773260700BE28BD /* Foundation.framework */; };
 		E7D2ED1D1773260700BE28BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED1C1773260700BE28BD /* CoreGraphics.framework */; };
@@ -18,16 +28,23 @@
 		E7D2ED2F1773260700BE28BD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED2E1773260700BE28BD /* Default-568h@2x.png */; };
 		E7D2ED321773260700BE28BD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED301773260700BE28BD /* MainStoryboard.storyboard */; };
 		E7D2ED351773260700BE28BD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED341773260700BE28BD /* FirstViewController.m */; };
-		E7D2ED371773260700BE28BD /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED361773260700BE28BD /* first.png */; };
-		E7D2ED391773260700BE28BD /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED381773260700BE28BD /* first@2x.png */; };
 		E7D2ED3C1773260700BE28BD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED3B1773260700BE28BD /* SecondViewController.m */; };
-		E7D2ED3E1773260700BE28BD /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED3D1773260700BE28BD /* second.png */; };
-		E7D2ED401773260700BE28BD /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED3F1773260700BE28BD /* second@2x.png */; };
 		E7D2ED481773260700BE28BD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED471773260700BE28BD /* SenTestingKit.framework */; };
 		E7D2ED491773260700BE28BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED181773260700BE28BD /* UIKit.framework */; };
 		E7D2ED4A1773260700BE28BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED1A1773260700BE28BD /* Foundation.framework */; };
 		E7D2ED521773260700BE28BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7D2ED501773260700BE28BD /* InfoPlist.strings */; };
 		E7D2ED551773260700BE28BD /* RadtacPomodoroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED541773260700BE28BD /* RadtacPomodoroTests.m */; };
+		E7D2ED62177479B100BE28BD /* Pomodoro.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED61177479B100BE28BD /* Pomodoro.m */; };
+		E7D2ED6517749C7800BE28BD /* TestTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED6417749C7800BE28BD /* TestTimer.m */; };
+		E7D2ED681778786800BE28BD /* SimplePomodoroTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED671778786800BE28BD /* SimplePomodoroTimer.m */; };
+		E7D2ED6B17789FFA00BE28BD /* TestTimeObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2ED6A17789FFA00BE28BD /* TestTimeObserver.m */; };
+		E7D2ED701778D03100BE28BD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED6F1778D03100BE28BD /* AudioToolbox.framework */; };
+		E7D2ED711778D03D00BE28BD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED6F1778D03100BE28BD /* AudioToolbox.framework */; };
+		E7F4CE87179007B800C62679 /* stopwatchTabIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F4CE85179007B700C62679 /* stopwatchTabIcon.png */; };
+		E7F4CE88179007B800C62679 /* stopwatchTabIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F4CE86179007B700C62679 /* stopwatchTabIcon@2x.png */; };
+		E7F4CE8B1790088A00C62679 /* homeTabIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F4CE891790088A00C62679 /* homeTabIcon.png */; };
+		E7F4CE8C1790088A00C62679 /* homeTabIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F4CE8A1790088A00C62679 /* homeTabIcon@2x.png */; };
+		E7F539EA178D814600183349 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F539E9178D814600183349 /* TabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +58,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E70C736C1785ECA700E1D368 /* alarm_clock_bell_ringing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarm_clock_bell_ringing.caf; sourceTree = "<group>"; };
+		E70C736E1785ECAE00E1D368 /* bell_style_alarm_clock_wind_up.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bell_style_alarm_clock_wind_up.caf; sourceTree = "<group>"; };
+		E76CDC2E1782CA2F00424D19 /* beginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beginButton.png; sourceTree = "<group>"; };
+		E76CDC301782CF7C00424D19 /* beginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beginButton@2x.png"; sourceTree = "<group>"; };
+		E76CDC321782D42900424D19 /* beginButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beginButtonPressed.png; sourceTree = "<group>"; };
+		E76CDC331782D42900424D19 /* beginButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beginButtonPressed@2x.png"; sourceTree = "<group>"; };
+		E76CDC3E1783105C00424D19 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		E76CDC3F1783105C00424D19 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
+		E76CDC421783227900424D19 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		E76CDC431783227900424D19 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		E76CDC46178322CE00424D19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E7D2ED151773260700BE28BD /* RadtacPomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadtacPomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D2ED181773260700BE28BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E7D2ED1A1773260700BE28BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,18 +85,29 @@
 		E7D2ED311773260700BE28BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E7D2ED331773260700BE28BD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		E7D2ED341773260700BE28BD /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		E7D2ED361773260700BE28BD /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		E7D2ED381773260700BE28BD /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		E7D2ED3A1773260700BE28BD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		E7D2ED3B1773260700BE28BD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		E7D2ED3D1773260700BE28BD /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		E7D2ED3F1773260700BE28BD /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		E7D2ED461773260700BE28BD /* RadtacPomodoroTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadtacPomodoroTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D2ED471773260700BE28BD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E7D2ED4F1773260700BE28BD /* RadtacPomodoroTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadtacPomodoroTests-Info.plist"; sourceTree = "<group>"; };
 		E7D2ED511773260700BE28BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E7D2ED531773260700BE28BD /* RadtacPomodoroTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadtacPomodoroTests.h; sourceTree = "<group>"; };
 		E7D2ED541773260700BE28BD /* RadtacPomodoroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadtacPomodoroTests.m; sourceTree = "<group>"; };
+		E7D2ED60177479B100BE28BD /* Pomodoro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pomodoro.h; sourceTree = "<group>"; };
+		E7D2ED61177479B100BE28BD /* Pomodoro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pomodoro.m; sourceTree = "<group>"; };
+		E7D2ED6317749C7800BE28BD /* TestTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTimer.h; sourceTree = "<group>"; };
+		E7D2ED6417749C7800BE28BD /* TestTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTimer.m; sourceTree = "<group>"; };
+		E7D2ED661778786800BE28BD /* SimplePomodoroTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePomodoroTimer.h; sourceTree = "<group>"; };
+		E7D2ED671778786800BE28BD /* SimplePomodoroTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePomodoroTimer.m; sourceTree = "<group>"; };
+		E7D2ED6917789FFA00BE28BD /* TestTimeObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTimeObserver.h; sourceTree = "<group>"; };
+		E7D2ED6A17789FFA00BE28BD /* TestTimeObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTimeObserver.m; sourceTree = "<group>"; };
+		E7D2ED6F1778D03100BE28BD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E7F4CE85179007B700C62679 /* stopwatchTabIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopwatchTabIcon.png; sourceTree = "<group>"; };
+		E7F4CE86179007B700C62679 /* stopwatchTabIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stopwatchTabIcon@2x.png"; sourceTree = "<group>"; };
+		E7F4CE891790088A00C62679 /* homeTabIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeTabIcon.png; sourceTree = "<group>"; };
+		E7F4CE8A1790088A00C62679 /* homeTabIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homeTabIcon@2x.png"; sourceTree = "<group>"; };
+		E7F539E8178D814600183349 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		E7F539E9178D814600183349 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76CDC481783238A00424D19 /* QuartzCore.framework in Frameworks */,
+				E7D2ED701778D03100BE28BD /* AudioToolbox.framework in Frameworks */,
 				E7D2ED191773260700BE28BD /* UIKit.framework in Frameworks */,
 				E7D2ED1B1773260700BE28BD /* Foundation.framework in Frameworks */,
 				E7D2ED1D1773260700BE28BD /* CoreGraphics.framework in Frameworks */,
@@ -86,6 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76CDC47178322CE00424D19 /* QuartzCore.framework in Frameworks */,
+				E7D2ED711778D03D00BE28BD /* AudioToolbox.framework in Frameworks */,
 				E7D2ED481773260700BE28BD /* SenTestingKit.framework in Frameworks */,
 				E7D2ED491773260700BE28BD /* UIKit.framework in Frameworks */,
 				E7D2ED4A1773260700BE28BD /* Foundation.framework in Frameworks */,
@@ -95,9 +138,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E76CDC411783227900424D19 /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				E76CDC421783227900424D19 /* XYPieChart.h */,
+				E76CDC431783227900424D19 /* XYPieChart.m */,
+			);
+			name = XYPieChart;
+			path = "../../../../Downloads/XYPieChart-master/XYPieChart";
+			sourceTree = "<group>";
+		};
 		E7D2ED0C1773260600BE28BD = {
 			isa = PBXGroup;
 			children = (
+				E76CDC46178322CE00424D19 /* QuartzCore.framework */,
+				E7D2ED6F1778D03100BE28BD /* AudioToolbox.framework */,
 				E7D2ED1E1773260700BE28BD /* RadtacPomodoro */,
 				E7D2ED4D1773260700BE28BD /* RadtacPomodoroTests */,
 				E7D2ED171773260700BE28BD /* Frameworks */,
@@ -133,12 +188,16 @@
 				E7D2ED301773260700BE28BD /* MainStoryboard.storyboard */,
 				E7D2ED331773260700BE28BD /* FirstViewController.h */,
 				E7D2ED341773260700BE28BD /* FirstViewController.m */,
-				E7D2ED361773260700BE28BD /* first.png */,
-				E7D2ED381773260700BE28BD /* first@2x.png */,
 				E7D2ED3A1773260700BE28BD /* SecondViewController.h */,
 				E7D2ED3B1773260700BE28BD /* SecondViewController.m */,
-				E7D2ED3D1773260700BE28BD /* second.png */,
-				E7D2ED3F1773260700BE28BD /* second@2x.png */,
+				E7D2ED60177479B100BE28BD /* Pomodoro.h */,
+				E7D2ED61177479B100BE28BD /* Pomodoro.m */,
+				E7D2ED661778786800BE28BD /* SimplePomodoroTimer.h */,
+				E7D2ED671778786800BE28BD /* SimplePomodoroTimer.m */,
+				E76CDC3E1783105C00424D19 /* ClockView.h */,
+				E76CDC3F1783105C00424D19 /* ClockView.m */,
+				E7F539E8178D814600183349 /* TabBarController.h */,
+				E7F539E9178D814600183349 /* TabBarController.m */,
 				E7D2ED1F1773260700BE28BD /* Supporting Files */,
 			);
 			path = RadtacPomodoro;
@@ -147,6 +206,17 @@
 		E7D2ED1F1773260700BE28BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E7F4CE891790088A00C62679 /* homeTabIcon.png */,
+				E7F4CE8A1790088A00C62679 /* homeTabIcon@2x.png */,
+				E7F4CE85179007B700C62679 /* stopwatchTabIcon.png */,
+				E7F4CE86179007B700C62679 /* stopwatchTabIcon@2x.png */,
+				E70C736E1785ECAE00E1D368 /* bell_style_alarm_clock_wind_up.caf */,
+				E70C736C1785ECA700E1D368 /* alarm_clock_bell_ringing.caf */,
+				E76CDC411783227900424D19 /* XYPieChart */,
+				E76CDC321782D42900424D19 /* beginButtonPressed.png */,
+				E76CDC331782D42900424D19 /* beginButtonPressed@2x.png */,
+				E76CDC301782CF7C00424D19 /* beginButton@2x.png */,
+				E76CDC2E1782CA2F00424D19 /* beginButton.png */,
 				E7D2ED201773260700BE28BD /* RadtacPomodoro-Info.plist */,
 				E7D2ED211773260700BE28BD /* InfoPlist.strings */,
 				E7D2ED241773260700BE28BD /* main.m */,
@@ -164,6 +234,10 @@
 				E7D2ED531773260700BE28BD /* RadtacPomodoroTests.h */,
 				E7D2ED541773260700BE28BD /* RadtacPomodoroTests.m */,
 				E7D2ED4E1773260700BE28BD /* Supporting Files */,
+				E7D2ED6317749C7800BE28BD /* TestTimer.h */,
+				E7D2ED6417749C7800BE28BD /* TestTimer.m */,
+				E7D2ED6917789FFA00BE28BD /* TestTimeObserver.h */,
+				E7D2ED6A17789FFA00BE28BD /* TestTimeObserver.m */,
 			);
 			path = RadtacPomodoroTests;
 			sourceTree = "<group>";
@@ -253,10 +327,16 @@
 				E7D2ED2D1773260700BE28BD /* Default@2x.png in Resources */,
 				E7D2ED2F1773260700BE28BD /* Default-568h@2x.png in Resources */,
 				E7D2ED321773260700BE28BD /* MainStoryboard.storyboard in Resources */,
-				E7D2ED371773260700BE28BD /* first.png in Resources */,
-				E7D2ED391773260700BE28BD /* first@2x.png in Resources */,
-				E7D2ED3E1773260700BE28BD /* second.png in Resources */,
-				E7D2ED401773260700BE28BD /* second@2x.png in Resources */,
+				E76CDC2F1782CA2F00424D19 /* beginButton.png in Resources */,
+				E76CDC311782CF7C00424D19 /* beginButton@2x.png in Resources */,
+				E76CDC341782D42900424D19 /* beginButtonPressed.png in Resources */,
+				E76CDC351782D42900424D19 /* beginButtonPressed@2x.png in Resources */,
+				E70C736D1785ECA700E1D368 /* alarm_clock_bell_ringing.caf in Resources */,
+				E70C736F1785ECAE00E1D368 /* bell_style_alarm_clock_wind_up.caf in Resources */,
+				E7F4CE87179007B800C62679 /* stopwatchTabIcon.png in Resources */,
+				E7F4CE88179007B800C62679 /* stopwatchTabIcon@2x.png in Resources */,
+				E7F4CE8B1790088A00C62679 /* homeTabIcon.png in Resources */,
+				E7F4CE8C1790088A00C62679 /* homeTabIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +375,11 @@
 				E7D2ED291773260700BE28BD /* AppDelegate.m in Sources */,
 				E7D2ED351773260700BE28BD /* FirstViewController.m in Sources */,
 				E7D2ED3C1773260700BE28BD /* SecondViewController.m in Sources */,
+				E7D2ED62177479B100BE28BD /* Pomodoro.m in Sources */,
+				E7D2ED681778786800BE28BD /* SimplePomodoroTimer.m in Sources */,
+				E76CDC401783105C00424D19 /* ClockView.m in Sources */,
+				E76CDC441783227900424D19 /* XYPieChart.m in Sources */,
+				E7F539EA178D814600183349 /* TabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +388,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7D2ED551773260700BE28BD /* RadtacPomodoroTests.m in Sources */,
+				E7D2ED6517749C7800BE28BD /* TestTimer.m in Sources */,
+				E7D2ED6B17789FFA00BE28BD /* TestTimeObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +562,7 @@
 				E7D2ED5A1773260700BE28BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7D2ED5B1773260700BE28BD /* Build configuration list for PBXNativeTarget "RadtacPomodoroTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +571,7 @@
 				E7D2ED5D1773260700BE28BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

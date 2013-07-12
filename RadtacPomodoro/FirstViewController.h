@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <UIWebViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) UIImageView *loadingImageView;
+@property (nonatomic, strong) UILabel *loadingLabel;
 
 @end
