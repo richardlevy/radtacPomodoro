@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC24A1371E8284C800FD102E /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24A1361E8284C800FD102E /* XYPieChart.m */; };
 		E70C736D1785ECA700E1D368 /* alarm_clock_bell_ringing.caf in Resources */ = {isa = PBXBuildFile; fileRef = E70C736C1785ECA700E1D368 /* alarm_clock_bell_ringing.caf */; };
 		E70C736F1785ECAE00E1D368 /* bell_style_alarm_clock_wind_up.caf in Resources */ = {isa = PBXBuildFile; fileRef = E70C736E1785ECAE00E1D368 /* bell_style_alarm_clock_wind_up.caf */; };
 		E76CDC2F1782CA2F00424D19 /* beginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E76CDC2E1782CA2F00424D19 /* beginButton.png */; };
@@ -14,7 +15,6 @@
 		E76CDC341782D42900424D19 /* beginButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E76CDC321782D42900424D19 /* beginButtonPressed.png */; };
 		E76CDC351782D42900424D19 /* beginButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E76CDC331782D42900424D19 /* beginButtonPressed@2x.png */; };
 		E76CDC401783105C00424D19 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E76CDC3F1783105C00424D19 /* ClockView.m */; };
-		E76CDC441783227900424D19 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E76CDC431783227900424D19 /* XYPieChart.m */; };
 		E76CDC47178322CE00424D19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76CDC46178322CE00424D19 /* QuartzCore.framework */; };
 		E76CDC481783238A00424D19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76CDC46178322CE00424D19 /* QuartzCore.framework */; };
 		E7D2ED191773260700BE28BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2ED181773260700BE28BD /* UIKit.framework */; };
@@ -58,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC24A1351E8284C800FD102E /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYPieChart.h; path = RadtacPomodoro/XYPieChart.h; sourceTree = SOURCE_ROOT; };
+		AC24A1361E8284C800FD102E /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYPieChart.m; path = RadtacPomodoro/XYPieChart.m; sourceTree = SOURCE_ROOT; };
 		E70C736C1785ECA700E1D368 /* alarm_clock_bell_ringing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarm_clock_bell_ringing.caf; sourceTree = "<group>"; };
 		E70C736E1785ECAE00E1D368 /* bell_style_alarm_clock_wind_up.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bell_style_alarm_clock_wind_up.caf; sourceTree = "<group>"; };
 		E76CDC2E1782CA2F00424D19 /* beginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beginButton.png; sourceTree = "<group>"; };
@@ -66,8 +68,6 @@
 		E76CDC331782D42900424D19 /* beginButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beginButtonPressed@2x.png"; sourceTree = "<group>"; };
 		E76CDC3E1783105C00424D19 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
 		E76CDC3F1783105C00424D19 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
-		E76CDC421783227900424D19 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
-		E76CDC431783227900424D19 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
 		E76CDC46178322CE00424D19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E7D2ED151773260700BE28BD /* RadtacPomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadtacPomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D2ED181773260700BE28BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -141,8 +141,8 @@
 		E76CDC411783227900424D19 /* XYPieChart */ = {
 			isa = PBXGroup;
 			children = (
-				E76CDC421783227900424D19 /* XYPieChart.h */,
-				E76CDC431783227900424D19 /* XYPieChart.m */,
+				AC24A1351E8284C800FD102E /* XYPieChart.h */,
+				AC24A1361E8284C800FD102E /* XYPieChart.m */,
 			);
 			name = XYPieChart;
 			path = "../../../../Downloads/XYPieChart-master/XYPieChart";
@@ -296,8 +296,13 @@
 		E7D2ED0D1773260600BE28BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = RML;
+				TargetAttributes = {
+					E7D2ED141773260700BE28BD = {
+						DevelopmentTeam = SW3U6X2535;
+					};
+				};
 			};
 			buildConfigurationList = E7D2ED101773260600BE28BD /* Build configuration list for PBXProject "RadtacPomodoro" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -377,8 +382,8 @@
 				E7D2ED3C1773260700BE28BD /* SecondViewController.m in Sources */,
 				E7D2ED62177479B100BE28BD /* Pomodoro.m in Sources */,
 				E7D2ED681778786800BE28BD /* SimplePomodoroTimer.m in Sources */,
+				AC24A1371E8284C800FD102E /* XYPieChart.m in Sources */,
 				E76CDC401783105C00424D19 /* ClockView.m in Sources */,
-				E76CDC441783227900424D19 /* XYPieChart.m in Sources */,
 				E7F539EA178D814600183349 /* TabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,25 +443,35 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -469,18 +484,27 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -490,9 +514,11 @@
 		E7D2ED591773260700BE28BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = SW3U6X2535;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RadtacPomodoro/RadtacPomodoro-Prefix.pch";
 				INFOPLIST_FILE = "RadtacPomodoro/RadtacPomodoro-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "RML.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -501,9 +527,11 @@
 		E7D2ED5A1773260700BE28BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = SW3U6X2535;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RadtacPomodoro/RadtacPomodoro-Prefix.pch";
 				INFOPLIST_FILE = "RadtacPomodoro/RadtacPomodoro-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "RML.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -520,6 +548,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RadtacPomodoro/RadtacPomodoro-Prefix.pch";
 				INFOPLIST_FILE = "RadtacPomodoroTests/RadtacPomodoroTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "RML.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -537,6 +566,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RadtacPomodoro/RadtacPomodoro-Prefix.pch";
 				INFOPLIST_FILE = "RadtacPomodoroTests/RadtacPomodoroTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "RML.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
